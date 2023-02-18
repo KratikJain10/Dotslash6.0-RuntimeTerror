@@ -74,7 +74,6 @@ weather.fetchWeather("INDORE");
 
 
 
-
 particlesJS('particles-js',
   
   {
