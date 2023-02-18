@@ -31,8 +31,7 @@ let weather = {
     document.querySelector(".wind").innerText =
       "Wind speed: " + speed + " km/h";
     document.querySelector(".weather").classList.remove("loading");
-    document.body.style.backgroundImage =
-      "url('https://source.unsplash.com/1600x900/?" + name + "')";
+   
   },
   search: function () {
     this.fetchWeather(document.querySelector(".search-bar").value);
@@ -52,35 +51,6 @@ document
   });
 
 weather.fetchWeather("INDORE");
-
-
-
-
-
-
-
-
-var data = 'https://api-ninjas.com';
-var category = 'city'
-$.ajax({
-    method: 'GET',
-    url: 'https://api.api-ninjas.com/v1/randomimage?category=' + category,
-    headers: { 'X-Api-Key': 'mcUh5MgaJV3eDiy3W6tKEA==niCBqwfvnFDMkRgi', 'Accept': 'image/jpg'},
-    success: function(result) {
-        console.log(result);
-    },
-    error: function ajaxError(jqXHR) {
-        console.error('Error: ', jqXHR.responseText);
-    }
-});
-
-
-
-
-
-
-
-
 
 
 
