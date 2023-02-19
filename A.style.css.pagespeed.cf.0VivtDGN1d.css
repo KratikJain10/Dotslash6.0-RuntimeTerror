@@ -2294,7 +2294,7 @@ footer {
 body {
   height: 100%;
   width: 100%;
-  background: linear-gradient(45deg, yellow, violet, orange, grey);
+  background: linear-gradient(45deg, rgb(49, 208, 248), rgb(134, 48, 22), orange, grey);
   background-size: 300% 300%;
   animation: color 5s ease-in-out infinite;
 }

@@ -1,3 +1,4 @@
+
 let weather = {
   apiKey: "776735087eb8b5bba433d4f0bdf70783",
   fetchWeather: function (city) {
@@ -50,7 +51,7 @@ document
     }
   });
 
-weather.fetchWeather("INDORE");
+weather.fetchWeather("SURAT");
 
 
 
