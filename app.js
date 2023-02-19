@@ -31,7 +31,7 @@ let weather = {
       "Humidity: " + humidity + "%";
     document.querySelector(".wind").innerText =
       "Wind speed: " + speed + " km/h";
-      if(speed>1 && temp<30 && temp>15 && humidity<30)
+      if(speed>1 && temp<35 && temp>15 && humidity<30)
       {
         document.querySelector(".rating").innerText = "City is good to live";
       }
