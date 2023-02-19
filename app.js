@@ -43,6 +43,7 @@ document.querySelector(".search button").addEventListener("click", function () {
   weather.search();
 });
 
+<<<<<<< Updated upstream
 document
   .querySelector(".search-bar")
   .addEventListener("keyup", function (event) {
@@ -73,6 +74,68 @@ weather.fetchWeather("SURAT");
 
 
 
+=======
+/* Otherwise just put the config content (json): */
+// var button= document.getElementsByClassName("submit")
+// var inputVal= document.getElementsByClassName("inputVal")
+// var name= document.getElementsByClassName("name")
+// var desc= document.getElementsByClassName("desc")
+
+
+// button.addEventListener('click',function()
+// {
+//   fetch("http://api.openweathermap.org/geo/1.0/direct?q='+inputVal.val+'&limit={limit}&appid={11d7c4e01b958bbcfdd90915f7bfdb72}")
+//   .then(response => response.json())
+//   .then(data => console.log(data))
+
+// // var data = response.json();
+// // var lat= data.lat;
+// // var lon=data.lon;
+
+// const response = fetch("http://api.openweathermap.org/data/2.5/air_pollution/forecast?lat={lat}&lon={lon}&appid={11d7c4e01b958bbcfdd90915f7bfdb72}")
+
+// })
+var input = document.querySelector('.input_text');
+var inputzipcode = document.querySelector('.input_text2');
+var inputcountrycode = document.querySelector('.input_text3');
+var main = document.querySelector('#name');
+var temp = document.querySelector('.temp');
+var desc = document.querySelector('.desc');
+//var clouds = document.querySelector('.clouds');
+var button= document.querySelector('.submit');
+
+
+button.addEventListener('click', function(name){
+
+  fetch(http://api.openweathermap.org/geo/1.0/zip?zip={inputzipcode},{inputcountrycode}&appid={11d7c4e01b958bbcfdd90915f7bfdb72})
+.then(response => response.json())
+.then(data => {
+  var lat = data['lat'];
+  var lon = data['lon'];
+  //var descValue = data['weather'][0]['description'];
+
+  // main.innerHTML = nameValue;
+  // desc.innerHTML = "Desc - "+descValue;
+  // temp.innerHTML = "Temp - "+tempValue;
+  // input.value ="";
+
+})
+
+
+fetch(http://api.openweathermap.org/data/2.5/air_pollution/forecast?lat={lat}&lon={lon}&appid={11d7c4e01b958bbcfdd90915f7bfdb72})
+.then(response => response.json())
+.then(data => {
+
+  main.innerHTML = nameValue;
+  desc.innerHTML = "Desc - "+descValue;
+  temp.innerHTML = "Temp - "+tempValue;
+  input.value ="";
+
+})
+
+.catch(err => alert("Wrong city name!"));
+})
+>>>>>>> Stashed changes
 
 
 particlesJS('particles-js',
