@@ -31,6 +31,14 @@ let weather = {
       "Humidity: " + humidity + "%";
     document.querySelector(".wind").innerText =
       "Wind speed: " + speed + " km/h";
+      if(speed>1 && temp<30 && temp>15 && humidity<30)
+      {
+        document.querySelector(".rating").innerText = "City is good to live";
+      }
+      else{
+        document.querySelector(".rating").innerText ="City is humid with high temperature ";
+      }
+      
     document.querySelector(".weather").classList.remove("loading");
    
   },
